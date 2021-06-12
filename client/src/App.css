@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo:wght@800&display=swap');
+
+.container {
+    min-height: calc(100vh - 2.2rem);
+}
+
+.button-icon-only {
+    transition: transform 200ms;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.button-icon-only:hover {
+    transform: scale(1.2);
+}
+
+.button-icon-only:active {
+    border: none;
+    cursor: pointer;
+    transform: scale(0.8);
+}
+
+.button-icon-only:focus {
+    background: rgb(226, 236, 248);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#search {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    color: #fff;
+}
+
+#search:focus {
+    background-color: rgba(6, 194, 194, 0.65);
+    color: #fff;
+}
+
+#search::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: white;
+    opacity: 1; /* Firefox */
+}
+
+.hover-effect {
+    transition: transform 200ms;
+}
+
+.hover-effect:hover {
+    transform: scale(1.05);
+}
+
+.clickable-label {
+    cursor: pointer;
+    text-decoration: underline;
+    text-decoration-color: #005b63;
+}
+
+.clickable-label:hover {
+    text-decoration-color: #000;
+}
+
+.rounded-top-corners {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.add-log-button {
+    background-color: #019e9f;
+}
+
+#navbar {
+    height: 6rem;
+    background: #005b63;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+#navlinks {
+    text-decoration: none;
+    margin-right: 1rem;
+    display: flex;
+    align-items: center;
+    justify-self: right;
+}
+
+#navlinks li:nth-child(1) {
+    margin-right: 0.7rem;
+}
+
+#logo {
+    color: white;
+    font-family: 'Exo', sans-serif;
+    font-size: 3rem;
+}
+
+.nav-button {
+    color: white;
+    background: none;
+    border: none;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    transition: background-color 100ms;
+}
+
+.logout-icon {
+    font-size: 1.4rem;
+    padding-right: 0.4rem;
+}
+
+.logout-button {
+    color: white;
+    background: none;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 100ms;
+}
+
+
+.nav-button:hover, .logout-button:hover {
+    background-color: rgba(1, 158, 159, 0.76);
+}
+
+.nav-welcome {
+    color: white;
+    font-family: 'Evo', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-self: end;
+    margin-right: 2rem;
+}
+
+.nav-welcome-row {
+    display: flex;
+    align-items: center;
+}
+
+.background-primary-light {
+    background-color: #019e9f;
+}
+
+.text-primary-dark {
+    color: #005b63;
+}
+
+@media all and (max-width: 600px) {
+
+    #navlinks {
+        flex-direction: column;
+    }
+
+    #navlinks li:nth-child(1) {
+        margin-right: 0rem;
+    }
+}
+
